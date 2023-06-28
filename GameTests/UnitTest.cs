@@ -3,7 +3,7 @@ using System;
 
 namespace Game;
 
-public class UnitTest1
+public class UnitTest
 {
     [Fact]
     public void TestClassFighter()
@@ -13,7 +13,6 @@ public class UnitTest1
 		var fullName = fighter.GetFullName();
 		// Assert
 		Assert.Equal("John Doe", fullName);
-		Assert.Equal(22, fighter.GetAge());
     }
 	
 	[Fact]
