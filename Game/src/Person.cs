@@ -19,7 +19,7 @@ namespace Game
 
 		public string GetFullName()
 		{
-			return $"{_lastName}";
+			return $"{_firstName} {_lastName}";
 		}
 
 		public int GetAge()

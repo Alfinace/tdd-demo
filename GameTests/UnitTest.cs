@@ -6,13 +6,23 @@ namespace Game;
 public class UnitTest
 {
     [Fact]
-    public void TestClassFighter()
+    public void TestFullName()
     {
 		Fighter.ResetCount();
 		var fighter = new Fighter("John", "Doe",2001, Level.Easy);
 		var fullName = fighter.GetFullName();
 		// Assert
 		Assert.Equal("John Doe", fullName);
+    }
+
+	[Fact]
+	 public void TestAge()
+    {
+		Fighter.ResetCount();
+		var fighter = new Fighter("John", "Doe",2001, Level.Easy);
+		var age = fighter.GetAge();
+		// Assert
+		Assert.Equal(22, age);
     }
 	
 	[Fact]
