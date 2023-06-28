@@ -3,7 +3,7 @@ using System;
 
 namespace Game;
 
-public class UnitTest1
+public class UnitTest
 {
     [Fact]
     public void TestClassFighter()
