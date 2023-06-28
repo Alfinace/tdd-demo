@@ -1,0 +1,5 @@
+Game/bin/*
+Game/obj/*
+
+GameTests/bin/*
+GameTests/obj/*
