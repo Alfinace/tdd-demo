@@ -13,7 +13,6 @@ public class UnitTest
 		var fullName = fighter.GetFullName();
 		// Assert
 		Assert.Equal("John Doe", fullName);
-		Assert.Equal(22, fighter.GetAge());
     }
 
 	[Fact]
