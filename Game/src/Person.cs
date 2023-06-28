@@ -24,7 +24,7 @@ namespace Game
 
 		public int GetAge()
 		{
-			return DateTime.Now.Year - _birthYear;
+			return DateTime.Now.Year + _birthYear;
 		}
 
 		public static int GetCount()
