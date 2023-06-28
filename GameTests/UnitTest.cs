@@ -15,7 +15,7 @@ public class UnitTest1
 		Assert.Equal("John Doe", fullName);
 		Assert.Equal(22, fighter.GetAge());
     }
-
+	
 	[Fact]
 	public void TestClassCountFighter()
 	{
