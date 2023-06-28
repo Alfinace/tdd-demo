@@ -1,7 +1,7 @@
 
 namespace Game
 {
-	public class Fighter{
+	public class Fighter : Person{
 
 		private string _firstName;
 		private string _lastName;
@@ -9,32 +9,9 @@ namespace Game
 		private static int _count = 0;
 		private int _liveCount = 100;
 
-		public Fighter(string firstName, string lastName, int birthYear, Level level) 
+		public Fighter(string firstName, string lastName, int birthYear, Level level) : base(firstName, lastName, birthYear)
 		{
-			_firstName = firstName;
-			_lastName = lastName;
-			_birthYear = birthYear;
-			_count++;
-		}
-
-		public string GetFullName()
-		{
-			return $"{_firstName} {_lastName}";
-		}
-
-		public int GetAge()
-		{
-			return DateTime.Now.Year - _birthYear;
-		}
-
-		public static int GetCount()
-		{
-			return _count;
-		}
-
-		public static void ResetCount()
-		{
-			_count = 0;
+			
 		}
 
 		public int GetLiveCount()

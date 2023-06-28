@@ -19,12 +19,12 @@ namespace Game
 
 		public string GetFullName()
 		{
-			return $"{_firstName} {_lastName}";
+			return $"{_lastName}";
 		}
 
 		public int GetAge()
 		{
-			return DateTime.Now.Year + _birthYear;
+			return DateTime.Now.Year - _birthYear;
 		}
 
 		public static int GetCount()
